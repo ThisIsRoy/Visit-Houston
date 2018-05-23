@@ -1,0 +1,23 @@
+{
+  "name": "visit_houston",
+  "version": "1.0.0",
+  "description": "Landing page for visiting Houston",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass-manual": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsRoy/Visit-Houston.git"
+  },
+  "author": "Roy Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThisIsRoy/Visit-Houston/issues"
+  },
+  "homepage": "https://github.com/ThisIsRoy/Visit-Houston#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

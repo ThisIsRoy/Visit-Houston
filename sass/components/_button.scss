@@ -1,4 +1,6 @@
 .btn {
+  border: none;
+  cursor: pointer;
   font-size: 150%;
 
   &:link,
@@ -23,8 +25,10 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 5px 10px rgba($color-black, 0.2);
+    outline: none;
     transform: translateY(-1px);
   }
 
@@ -34,6 +38,15 @@
 
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--red {
+    background-color: $color-primary-light;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary-light;
     }
   }
 

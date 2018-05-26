@@ -35,10 +35,10 @@
   text-transform: uppercase;
   transition: all 0.2s;
 
-  &:hover {
-    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
-    transform: scale(1.1) skewX(15deg) skewY(2deg);
-  }
+  // &:hover {
+  //   text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  //   transform: scale(1.1) skewX(15deg) skewY(2deg);
+  // }
 }
 
 .heading-tertiary {

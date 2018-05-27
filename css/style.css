@@ -521,6 +521,66 @@ body {
   .footer__name {
     margin-right: 0; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  border-radius: 50%;
+  color: #fff;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  width: 7rem;
+  z-index: 1999; }
+
+.navigation__background {
+  background-image: radial-gradient(#ff3434, #aa5a64);
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed;
+  right: 6.5rem;
+  top: 6.5rem;
+  transform: scale(80);
+  width: 6rem;
+  z-index: 999; }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1499; }
+
+.navigation__list {
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 250%;
+  color: #fff;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: rgba(240, 52, 52, 0.8);
+  transform: translateX(1rem); }
+
 .section-about {
   background-color: #f7f7f7;
   margin-top: -20vh;

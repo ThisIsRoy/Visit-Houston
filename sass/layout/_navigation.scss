@@ -1,0 +1,75 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    border-radius: 50%;
+    color: $color-white;
+    height: 7rem;
+    position: fixed;
+    right: 6rem;
+    top: 6rem;
+    width: 7rem;
+    z-index: 1999;
+
+  }
+
+  &__background {
+    background-image: radial-gradient($color-primary-solid-1, $color-primary-solid-2);
+    border-radius: 50%;
+    height: 6rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 6.5rem;
+    transform: scale(80); // move elsewhere later
+    width: 6rem;
+    z-index: 999;
+
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1499;
+  }
+
+  &__list {
+    left: 50%;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+      background-size: 250%; // key to creating the sliding white background
+      color: $color-white;
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.4s;
+    }
+    
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+}

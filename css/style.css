@@ -574,7 +574,10 @@ body {
     margin-right: 0; }
 
 .navigation__checkbox {
-  display: none; }
+  display: none;
+  opacity: 0;
+  transition: all 0.4s;
+  width: 0; }
 
 .navigation__button {
   border-radius: 50%;
@@ -604,10 +607,9 @@ body {
   height: 100vh;
   left: 0;
   opacity: 0;
-  pointer-events: none;
   position: fixed;
   top: 0;
-  transition: width 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   width: 0;
   z-index: 1499; }
 
@@ -646,8 +648,6 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   display: block;
   opacity: 1;
-  pointer-events: all;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   width: 100%; }
 
 .navigation__icon {
